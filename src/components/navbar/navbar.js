@@ -1,6 +1,7 @@
 import React, { Component} from "react";
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from '../main/main';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component{
   render(){
@@ -9,18 +10,18 @@ class Navbar extends Component{
 	        <Layout>
 	            <Header title="Louis Alemar" scroll>
 	                <Navigation>
-		                  <li><a href="/">About</a></li>
-		                  <li><a href="/">Portfolio</a></li>
-		                  <li><a href="/">Testimonials</a></li>
-		                  <li><a href="/">Contact</a></li>
+		                  <Link to="/about">About</Link>
+		                  <Link to="/portfolio">Portfolio</Link>
+		                  <Link to="/testimonials">Testimonials</Link>
+		                  <Link to="/contact">Contact</Link>
 	                </Navigation>
 	            </Header>
 	            <Drawer title="Louis Alemar">
 	                <Navigation>
-		                  <li><a href="/">About</a></li>
-		                  <li><a href="/">Portfolio</a></li>
-		                  <li><a href="/">Testimonials</a></li>
-		                  <li><a href="/">Contact</a></li>
+		                  <Link to="/about">About</Link>
+		                  <Link to="/portfolio">Portfolio</Link>
+		                  <Link to="/testimonials">Testimonials</Link>
+		                  <Link to="/contact">Contact</Link>
 	                </Navigation>
 	            </Drawer>
 	            <Content>
