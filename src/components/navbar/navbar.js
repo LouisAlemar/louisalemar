@@ -1,21 +1,32 @@
 import React, { Component} from "react";
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 
 class Navbar extends Component{
   render(){
     return(
-      <div className="Navbar">
-      	<div className="logo_container">
-	      	<img src={'../images/logo.png'} />
-      	</div>
-      	<div className="navbar_container">
-	      	<ul>
-	      		<li><a href="#">About</a></li>
-	      		<li><a href="#">Portfolio</a></li>
-	      		<li><a href="#">Testimonials</a></li>
-	      		<li><a href="#">Contact</a></li>
-	      	</ul>
-      	</div>
-      </div>
+	    <div className="demo-big-content">
+	        <Layout>
+	            <Header title="Louis Alemar" scroll>
+	                <Navigation>
+		                  <li><a href="/">About</a></li>
+		                  <li><a href="/">Portfolio</a></li>
+		                  <li><a href="/">Testimonials</a></li>
+		                  <li><a href="/">Contact</a></li>
+	                </Navigation>
+	            </Header>
+	            <Drawer title="Louis Alemar">
+	                <Navigation>
+		                  <li><a href="/">About</a></li>
+		                  <li><a href="/">Portfolio</a></li>
+		                  <li><a href="/">Testimonials</a></li>
+		                  <li><a href="/">Contact</a></li>
+	                </Navigation>
+	            </Drawer>
+	            <Content>
+	                <div className="page-content" />
+	            </Content>
+	        </Layout>
+	    </div>
     );
   }
 }
