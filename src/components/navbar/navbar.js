@@ -1,5 +1,6 @@
 import React, { Component} from "react";
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import Main from '../main/main';
 
 class Navbar extends Component{
   render(){
@@ -24,6 +25,7 @@ class Navbar extends Component{
 	            </Drawer>
 	            <Content>
 	                <div className="page-content" />
+	                <Main />
 	            </Content>
 	        </Layout>
 	    </div>
