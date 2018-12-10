@@ -1,0 +1,148 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+	@black: rgb(0, 0, 0);
+	@white: rgb(255, 255, 255);
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+	@media0: ~"(min-width: 1440px)";
+	@media0_: ~"(max-width: 1439px)";
+
+	@media1: ~"(min-width: 1200px)";
+	@media1_: ~"(max-width: 1199px)";
+
+	@media2: ~"(min-width: 992px)";
+	@media2_: ~"(max-width: 991px)";
+
+	@media3: ~"(min-width: 768px)";
+	@media3_: ~"(max-width: 767px)";
+
+	@media4: ~"(min-width: 480px)";
+	@media4_: ~"(max-width: 479px)";
+
+
+/* ==========================================================================
+   GLOBAL STYLES
+   ========================================================================== */
+
+	html{
+		font-size: 10px !important;
+	}
+
+	h1{
+		margin: 0px !important;
+	}
+
+	h2{
+		margin: 0px !important;
+	}
+
+	h3{
+		margin: 0px !important;
+	}
+
+	h4{
+		margin: 0px !important;
+	}
+
+	h5{
+		margin: 0px !important;
+	}
+
+	h6{
+		margin: 0px !important;
+	}
+
+	.mdl-grid{
+		padding: 0px !important;
+	}
+
+	.mdl-cell{
+		margin: 0px !important;
+		width: 100% !important;
+		padding: 0rem 2rem !important;
+	}
+
+/* ==========================================================================
+   PAGE SPECIFIC STYLES
+   ========================================================================== */   
+
+	.header-color{
+		background: #373B44;
+		background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+		background: linear-gradient(to left, #4286f4, #373B44);
+	}
+
+	.landing-grid{
+		background: #373B44;
+		background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+		background: linear-gradient(to left, #4286f4, #373B44);
+		text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.logo{
+		width: 20rem;
+		@media screen and @media3_{
+			width: 10rem;
+		}
+		margin: 0 auto 3rem auto;
+		display: block;
+		padding-top: 10rem;
+		@media screen and @media3_{
+			padding-top: 5rem;
+		}
+	}
+
+	.banner-text{
+		background-color: @black;
+		opacity: 0.8;
+		width: 75%;
+		padding: 1rem 0rem;
+		@media screen and @media3_{
+			width: 100%;
+		}
+		margin: 0 auto;
+		border-radius: 1rem;
+		h1{
+			font-size: 6.6rem;
+			margin-bottom: 1rem;
+			@media screen and @media3_{
+				font-size: 3.5rem;
+			}
+			font-weight: 800;
+			color: @white;
+		}
+		hr{
+			border-top: 0.5rem dotted @white;
+			width: 50%;
+			margin: 0 auto;
+		}
+		p{
+			color: @white;
+			font-size: 2rem;
+			padding: 1rem;
+		}
+		.social-links{
+			display: flex;
+			justify-content: space-between;
+			width: 20%;
+			@media screen and @media3_{
+				width: 50%;
+			}
+			margin: 0 auto;
+			i{
+				color: @white;
+				font-size: 5rem;
+				padding: 0.8rem;
+			}
+		}
+	}

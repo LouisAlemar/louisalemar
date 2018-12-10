@@ -12,6 +12,26 @@ class Landing extends Component {
 							alt="Louis Alemar Logo"
 							className="logo"
 						/>
+
+						<div className="banner-text">
+							<h1>Full Stack Engineer</h1>
+
+							<hr />
+
+							<p>HTML/CSS | JavaScript | PHP | React | NodeJS | MySQL</p>
+
+							<div className="social-links">
+								{/* GitHub */}
+								<a href="https://github.com/LouisAlemar" target="_blank">
+									<i className="fab fa-github-square"></i>
+								</a>
+
+								{/* LinkedIn */}
+								<a href="https://www.linkedin.com/in/louisalemar/" target="_blank">
+									<i className="fab fa-linkedin"></i>
+								</a>
+							</div>
+						</div>
 					</Cell>
 				</Grid>
 			</div>

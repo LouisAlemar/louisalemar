@@ -1,7 +1,7 @@
 import React, { Component} from "react";
 import Navbar from "./components/navbar/navbar.js";
 import {hot} from "react-hot-loader";
-import "./App.css";
+import "./styles/App.min.css";
 
 class App extends Component{
   render(){
