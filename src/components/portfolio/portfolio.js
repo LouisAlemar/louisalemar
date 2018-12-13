@@ -6,6 +6,22 @@ class Portfolio extends Component {
 		super(props);
 		this.state = { activeTab: 0 }
 	}
+
+	toggleCategories(){
+		if(this.state.activeTab === 0){
+			return(
+				<div><h1>This is React</h1></div>
+			)
+		} else if(this.state.activeTab === 1){
+			return(
+				<div><h1>This is Angular</h1></div>
+			)
+		} else if(this.state.activeTab === 2){
+			return(
+				<div><h1>This is MongoDB</h1></div>
+			)
+		}
+	}
 	
 	render(){
 		return(
@@ -15,6 +31,10 @@ class Portfolio extends Component {
 					<Tab>Angular</Tab>
 					<Tab>MongoDB</Tab>
 				</Tabs>
+
+				<section className="projects-grid">
+					{this.toggleCategories()}
+				</section>
 			</div>
 		)
 	}
