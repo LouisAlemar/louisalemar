@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 class Portfolio extends Component {
 	constructor(props) {
@@ -10,7 +10,20 @@ class Portfolio extends Component {
 	toggleCategories(){
 		if(this.state.activeTab === 0){
 			return(
-				<div><h1>This is React</h1></div>
+				<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+					<CardTitle style={{color: '#000', height: '200px', background: 'url(../images/noddle.png) center / cover'}}>
+						Noddle Companies
+					</CardTitle>
+					<CardText>
+						The Noddle Companies is a full service strategic development partner which can provide their clients with assistance in site selection, acquisition master planning, architect and contractor selections and contract negotiation, zoning, infrastructure installation, tax incentives, construction management and more.
+					</CardText>
+					<CardActions className="CardActions" border>
+						<Button colored><a href="http://www.noddlecompanies.com/" target="_blank">Website</a></Button>
+					</CardActions>
+					<CardMenu style={{color: '#fff'}}>
+						<IconButton name="share" />
+					</CardMenu>
+				</Card>
 			)
 		} else if(this.state.activeTab === 1){
 			return(
@@ -33,7 +46,13 @@ class Portfolio extends Component {
 				</Tabs>
 
 				<section className="projects-grid">
-					{this.toggleCategories()}
+					<Grid className="projects-grid">
+						<Cell col={12}>
+							<div className="content">
+								{this.toggleCategories()}
+							</div>
+						</Cell>
+					</Grid>
 				</section>
 			</div>
 		)

@@ -5,6 +5,8 @@
 	@black: rgb(0, 0, 0);
 	@white: rgb(255, 255, 255);
 
+	@blue_link: rgb(63,81,181);
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -55,6 +57,11 @@
 
 	h6{
 		margin: 0px !important;
+	}
+
+	a{
+		color: @blue_link !important;
+		text-decoration: none;
 	}
 
 	.mdl-grid{
@@ -145,4 +152,9 @@
 				padding: 0.8rem;
 			}
 		}
+	}
+
+	.CardActions{
+		display: flex;
+		justify-content: center;
 	}
