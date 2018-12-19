@@ -8,9 +8,9 @@ class Navbar extends Component{
     return(
 	    <div className="demo-big-content">
 	        <Layout>
-	            <Header className="header-color" title="Louis Alemar | Full-Stack Engineer" scroll>
+	            <Header className="header-color" title="Louis Alemar | Front-End Engineer" scroll>
 	                <Navigation>
-		                  <Link to="/about">About</Link>
+		                  <Link to="/resume">Resume</Link>
 		                  <Link to="/portfolio">Portfolio</Link>
 		                  <Link to="/testimonials">Testimonials</Link>
 		                  <Link to="/contact">Contact</Link>
@@ -18,7 +18,7 @@ class Navbar extends Component{
 	            </Header>
 	            <Drawer title="Louis Alemar">
 	                <Navigation>
-		                  <Link to="/about">About</Link>
+		                  <Link to="/resume">Resume</Link>
 		                  <Link to="/portfolio">Portfolio</Link>
 		                  <Link to="/testimonials">Testimonials</Link>
 		                  <Link to="/contact">Contact</Link>
