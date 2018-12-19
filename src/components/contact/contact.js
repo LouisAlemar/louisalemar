@@ -14,7 +14,7 @@ class Contact extends Component {
 							className="profile_pic"
 						/>
 						<p style={{ width: '75%', margin: 'auto', paddingTop: '1rem' }}>
-							Since I was a child, I have always been a creative person. From graduating as a Music Producer to being a Front-End Engineer, the creative aspect behind both careers is what has driven me to pursue these professions. I first taught myself how to build webpages back in the 6th grade. The idea of being able to type lines of code to create something from nothing was mind-boggling to me.
+							Since I was a child, I have always been a creative person. From graduating as a Music Producer to being a Front-End Engineer, the creative aspect behind both careers is what has driven me to pursue these professions. I first taught myself how to build webpages back in the 6th grade. The idea of being able to type lines of code to create something from nothing was mind-boggling to me. <br /><br />Graduating from Full Sail University with a Bachelor's degree in Music Production in 2015 has been one of my greatest accomplishments. However, after working in multiple production studios I realized that my efforts of creativity would be better resembled in places where I could have more control in my field of expertise. That is why I decided to pursue Software Engineering.
 						</p>
 					</Cell>
 					<Cell col={6}>
