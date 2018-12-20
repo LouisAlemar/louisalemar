@@ -59,6 +59,26 @@ class Portfolio extends Component {
 					
 				</div>
 			)
+		} else if(this.state.activeTab === 1){
+			return(
+				<div className="projects-grid">
+					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+						<CardTitle style={{color: '#000', height: '200px', background: 'url(../images/louisalemar_website.png) center / cover'}}>
+							Louis Alemar
+						</CardTitle>
+						<CardText>
+							Portfolio website in React
+						</CardText>
+						<CardActions className="CardActions" border>
+							<Button colored><a href="https://github.com/LouisAlemar/louisalemar" target="_blank">GitHub</a></Button>
+							<Button colored><a href="http://www.louisalemar.com/" target="_blank">Website</a></Button>
+						</CardActions>
+						<CardMenu style={{color: '#fff'}}>
+							<IconButton name="share" />
+						</CardMenu>
+					</Card>
+				</div>
+			)
 		}
 	}
 	
@@ -66,7 +86,8 @@ class Portfolio extends Component {
 		return(
 			<div className="category-tabs">
 				<Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-					<Tab>All</Tab>
+					<Tab>JavaScript</Tab>
+					<Tab>React</Tab>
 				</Tabs>
 
 				<Grid>

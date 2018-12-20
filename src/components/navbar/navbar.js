@@ -12,7 +12,6 @@ class Navbar extends Component{
 	                <Navigation>
 		                  <Link to="/resume">Resume</Link>
 		                  <Link to="/portfolio">Portfolio</Link>
-		                  <Link to="/testimonials">Testimonials</Link>
 		                  <Link to="/contact">Contact</Link>
 	                </Navigation>
 	            </Header>
@@ -20,7 +19,6 @@ class Navbar extends Component{
 	                <Navigation>
 		                  <Link to="/resume">Resume</Link>
 		                  <Link to="/portfolio">Portfolio</Link>
-		                  <Link to="/testimonials">Testimonials</Link>
 		                  <Link to="/contact">Contact</Link>
 	                </Navigation>
 	            </Drawer>
