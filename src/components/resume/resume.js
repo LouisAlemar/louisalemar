@@ -88,7 +88,7 @@ class Resume extends Component {
 
 						<Skills
 							skill='PHP'
-							progress={80}
+							progress={85}
 						/>
 
 						<Skills
