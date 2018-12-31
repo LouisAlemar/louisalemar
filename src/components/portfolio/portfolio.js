@@ -12,7 +12,7 @@ class Portfolio extends Component {
 			return(
 				<div className="projects-grid">
 					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#000', height: '200px', background: 'url(../images/noddle.png) center / cover'}}>
+						<CardTitle className="portfolio_item_header" style={{color: '#000', height: '200px', background: 'url(../images/noddle.jpg) center / cover'}}>
 							Noddle Companies
 						</CardTitle>
 						<CardText>
@@ -27,7 +27,7 @@ class Portfolio extends Component {
 					</Card>
 
 					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#000', height: '200px', background: 'url(../images/nycbuildsbio.png) center / cover'}}>
+						<CardTitle className="portfolio_item_header" style={{color: '#000', height: '200px', background: 'url(../images/nycbuildsbio.jpg) center / cover'}}>
 							NYC Builds Bio
 						</CardTitle>
 						<CardText className="paddingBottom34">
@@ -42,7 +42,7 @@ class Portfolio extends Component {
 					</Card>
 
 					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#000', height: '200px', background: 'url(../images/iannelli.png) center / cover'}}>
+						<CardTitle className="portfolio_item_header" style={{color: '#000', height: '200px', background: 'url(../images/iannelli.jpg) center / cover'}}>
 							Iannelli Construction
 						</CardTitle>
 						<CardText className="paddingBottom88">
@@ -63,7 +63,7 @@ class Portfolio extends Component {
 			return(
 				<div className="projects-grid">
 					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#000', height: '200px', background: 'url(../images/louisalemar_website.png) center / cover'}}>
+						<CardTitle className="portfolio_item_header" style={{color: '#000', height: '200px', background: 'url(../images/louisalemar_website.jpg) center / cover'}}>
 							Louis Alemar
 						</CardTitle>
 						<CardText>
