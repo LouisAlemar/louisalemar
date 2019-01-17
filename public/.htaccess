@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+   ErrorDocument 404 /var/www/html/index.html
+   RewriteEngine On
+   RewriteBase /
+   RewriteRule ^index\.html$ - [L]
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteRule ^(.*)$ / [L,QSA]
+</IfModule>
